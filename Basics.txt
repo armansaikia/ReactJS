@@ -1,0 +1,75 @@
+ES 6-------> ECMA Script 2015
+
+ES 6 features---------------->
+
+1.let and const keyword
+2.Array helper functions--------------> 1. forEach   2.map    3.filter   4.reduce    5.find       6.some   7.every
+3.Arrow functions
+4.Classes 
+5.Enhanced Object Literals
+6.Template Strings
+7.Default Function Arguments
+8.Rest and spread Operators
+9.Destructing of Objects/Arrays
+10.Promises
+
+
+1.let,var,const------------> 
+I.var was used earlier before the release pf ES6  
+II. var is used globally 
+
+III. let and const are used within the scope means inside braces,inside function,inside if-else.
+IV. let can be re-updated but cannot be re-declared.
+V.const can neither be updated nor declared.
+
+
+2.Array helper functions
+
+forEach------->forEach is a higher-order function available in JavaScript that allows you to iterate over elements in an array and perform a specified operation on each element.
+
+Syntax:
+
+array.forEach(function(Value, index, array) {
+  
+});
+
+Value---mandatory
+index & array---optional
+
+
+Callback function----------> passing funtion definition as an argument in another function known as callback function
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+React: 
+> React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library[3][4] for building user interfaces based on components.
+> It is maintained by Meta (formerly Facebook) and a community of individual developers and companies.
+> React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js. Because React is only concerned with the user interface and rendering components to the DOM, React applications often rely on libraries for routing and other client-side functionality.
+
+Prerequisite:
+Node JS - JS Runtime environment
+npm - node package manager -> It helps us in managing the javascript packages available.
+For installing create react app globally:
+    npm install -global create-react-app
+For creating scaffolded app provided by create react app:
+    npx create-react-app project-name
+For executing and starting the server of an app:
+    npm start -> react-scripts
+For downloading all the packages which are required for our app:
+        npm install
+ecommerce-app
+    node_modules - It consists of all packages which are required for this app.
+    package.json - It stores all the script and package names & versions of our app.
+    package-lock.json - It stores all the dependant package names and versions.
+    README.md - Its a normal text file, where we can mention about the user case of this app.
+    src - The actual source code of our react app.
+    public - It is output folder of our app.
+1.js
+export default function functionName() {
+}
+export const a = 10;
+export const obj = {
+};
+2.js
+import functionName from 'relativePath';
+functionName();
