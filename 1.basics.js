@@ -43,7 +43,20 @@ const trainList = [
 //     console.log("Train List:" ,trainList[i].name);
 // }
 
+
+
 //Instead of using for-loop we will use forEach to iterate data in an array (ALTERNATIVE FOR for-loop)
+
+// trainList.forEach(function(TRAIN_INFO){
+
+//     console.log(TRAIN_INFO.name,TRAIN_INFO.Arrival)
+
+// })
+
+
+
+
+//to use arrow function we will remove the function keyword followed by =>
 
 trainList.forEach((TRAIN_INFO) => {
 

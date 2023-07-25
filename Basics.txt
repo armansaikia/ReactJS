@@ -37,7 +37,21 @@ Value---mandatory
 index & array---optional
 
 
-Callback function----------> passing funtion definition as an argument in another function known as callback function
+Callback function----------> passing funtion definition as an argument in another function known as callback function.
+
+
+
+Default Function arguments: Assigning default value to the function argument.
+
+Syntax:
+
+function functionName(arg1 = defaultValue1,arg 2= defaultValue2){
+
+}
+
+functionName(value1,value2);
+
+If we don't pass value from function call,default value will be mapped to the argument
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

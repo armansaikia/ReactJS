@@ -1,36 +1,36 @@
-//find--------------------->IT checks for every single statements and returns TRUE/FALSE (LOGICAL OR OPEARATOR)
+//some--------------------->IT checks for every single statements and returns TRUE/FALSE (LOGICAL OR OPEARATOR)
 
 
-const users = [
+
+const trainList = [
     {
-        name: 'Bhargav',
-        city: 'Hyderabad',
-        age: 26
+      name: "SECUNDERABAD JN - BAREILLY",
+      trainNo: '2222222',
+      DEPARTURE: "12:30",
+      Arrival: "10:30",
     },
     {
-        name: 'Jayanth',
-        city: 'Hyderabad',
-        age: 25
+      name: "INDB BARELLY EX",
+      trainNo: '2222222',
+      DEPARTURE: "12:30",
+      Arrival: "12:30",
     },
     {
-        name: 'Lokesh',
-        city: 'Bangalore',
-        age: 23
+      name: "KACHEGUDA - BAREILLY",
+      trainNo: '2222222',
+      DEPARTURE: "12:30",
+      Arrival: "13:30",
     },
     {
-        name: 'Jagadeesh',
-        city: 'Bangalore',
-        age: 16
-    },
-    {
-        name: 'Ganesh',
-        city: 'Mumbai',
-        age: 17
+      name: "RMR EXPRESS",
+      trainNo: '2222222',
+      DEPARTURE: "12:30",
+      Arrival: "11:30",
     }
-];
-
-const isEveryUser = users.every(function(user) {
-    return user.age > 18;
-});
-
-console.log(isEveryUser);
+  ];
+  
+  const isRMREXPRESSexist = trainList.some(function(TRAIN_INFO) {
+    return TRAIN_INFO.name === "RMR EXPRESS"
+  });
+  
+  console.log("Is RMR eXPESS AVAILABLE", isRMREXPRESSexist);

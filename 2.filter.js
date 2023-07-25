@@ -29,6 +29,7 @@ const trainList = [
     return TRAIN_INFO.Arrival === "12:30"; // we have to use return statement 
   });
 
+   // IF WE WANT TO ADD ONE MORE FILTER BY SETTING ANOTHER TIME--------------
   const filteredUsers2 = trainList.filter(function(TRAIN_INFO) {
     return TRAIN_INFO.Arrival === "13:30"; // we have to use return statement 
   });
