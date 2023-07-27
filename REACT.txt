@@ -1,0 +1,109 @@
+React: 
+> React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library[3][4] for building user interfaces based on components.
+> It is maintained by Meta (formerly Facebook) and a community of individual developers and companies.
+> React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js. Because React is only concerned with the user interface and rendering components to the DOM, React applications often rely on libraries for routing and other client-side functionality.
+
+Prerequisite:
+Node JS - JS Runtime environment
+npm - node package manager -> It helps us in managing the javascript packages available.
+
+
+
+
+
+
+For installing create react app globally:
+    npm install -global create-react-app
+For creating scaffolded app provided by create react app:
+    npx create-react-app project-name
+For executing and starting the server of an app:
+    npm start -> react-scripts
+For downloading all the packages which are required for our app:
+        npm install
+
+
+
+
+
+ecommerce-app
+    node_modules - It consists of all packages which are required for this app.
+    package.json - It stores all the script and package names & versions of our app.
+    package-lock.json - It stores all the dependant package names and versions.
+    README.md - Its a normal text file, where we can mention about the user case of this app.
+    src - The actual source code of our react app.
+    public - It is output folder of our app.
+
+
+
+
+
+1.js
+export default function functionName() {
+}
+export const a = 10;
+export const obj = {
+};
+2.js
+import functionName from 'relativePath';
+functionName();
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+DATA BINDING------- communicating from javascript to HTML/component to view
+
+ Syntax:
+        function App() {
+            const variableName = value;
+            return (
+                <h3>{variableName}</h3>
+            )
+        }
+
+> Similar to document.getElementbyID(idname).innerhtml = value
+
+
+EVENT BINDING-----------communicating from  HTML  to Javascript/view to component
+
+Syntax:
+        No arguments:
+        <tagName onClick={functionName}></tagName> //onClick will be camel case followed by ={} instead of double quotes
+
+
+        With arguments:
+        <tagName onClick={() => functionName(value1, value2)}></tagName>
+
+ -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Component:
+
+> Components are independent and reusable bits of code.
+> They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
+
+Components are of two types:
+1. Class components
+2. Functional Components
+
+
+Functional Component:
+    function ComponentName() {
+        // Variables
+        // Anonymous Functions
+        
+        return (
+            <div>
+            
+            </div>
+        )
+    }
+    export default ComponentName;
+
+
+Note: In return keyword, 
+    When we want to write html source code.
+    (
+        -> HTML Source Code
+    )
+    when we want to write js source code.
+    {
+        -> JS Source code
+    }
