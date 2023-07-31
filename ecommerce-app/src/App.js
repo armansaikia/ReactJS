@@ -1,19 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import UserInfo from './UserInfo';
-import ProductsComponent from './Products';
+import ProductComponents from './Product';
+import ProductDetailsComponent from './ProductDetails';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
-
   return (
     <div className="App">
-      <Navbar/>
-      {/* <UserInfo /> */}
-      <ProductsComponent/>
-      <Footer />
-    </div>  
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/userinfo" element={<UserInfo />} />
+          <Route path="/product" element={<ProductComponents />} />
+          <Route path="/productdetails" element={<ProductDetailsComponent />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 
