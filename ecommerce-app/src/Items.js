@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-function ProductsComponent() {
+function ItemsComponent() {
     const [products, setProducts] = useState([
         {
             name: 'POCO C50 (Royal Blue, 32 GB)',
@@ -140,4 +140,4 @@ function ProductsComponent() {
     )
 }
 
-export default ProductsComponent;
+export default ItemsComponent;
