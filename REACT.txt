@@ -107,3 +107,31 @@ Note: In return keyword,
     {
         -> JS Source code
     }
+--------------------------------------------------------------------------------------------------------------
+ https://domain.com/routeName/routeParam1/routeParam2/routeParam3?queryParam1=value1&queryParam2=value2&queryParam3=value3
+
+Route Params:
+
+    /routeParam1/routeParam2/routeParam3
+
+    Syntax:
+
+        <Route path="/routeName/:routeParamName1/routeParamName2"></Route>
+
+
+Query Params:
+
+    ?queryParam1=value1&queryParam2=value2&queryParam3=value3
+
+
+Note: When we are more no of parameters, which needs to passed in the url. we need to go for query paramaters. If we are having less paramaters we need to go for route params.
+
+useParams: Used to extract route parameters as an object in the current url.
+
+Syntax:
+
+    import { useParams } from 'react-router-dom';
+
+    const params = useParams();
+
+    params.routeParamName;
