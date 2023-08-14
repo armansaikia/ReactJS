@@ -135,3 +135,35 @@ Syntax:
     const params = useParams();
 
     params.routeParamName;
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    
+    Redux Toolkit:
+
+> Redux is a state management library that allows you to manage the state of your application more efficiently and predictably.
+> Imagine your are building a house and need to keep track of all the materials you use and how much money you spend. Instead of keeping track 
+of everything in your head or on a piece of paper, you could use a ledger to keep of every transaction. Redux works similarly by keeping track of 
+your application's state in a single place called the "Store".
+> Let's say your are building an ecommerce site.You may need to keep track of the items in a user's cart, their payment details and their shipping details.
+Instead of passing this information from component to component using props.Redux allows you to store them in one central location where they can be easily 
+accessed and updated. This makes it easier to manage complex states and keep your application organized.
+
+Why should we use Redux:
+> Centralized state management.
+> Predictable state updates.
+> Easier debugging.
+> Better performance.
+
+Store
+It's a container that holds all the data of your application.
+
+Action
+An action is an object that describes what changes need to be made to the state of your application.
+
+Dispatch:
+It is a function provided by store that allows you to send an action to update the state of your application.
+When you call dispatch, the store runs an action through all the available reducers, which in turn update state accordingly.
+
+Reducer:
+A reducer is a function that takes in the current state of an app and action as arguments and return updated state based on the action provided.
+
